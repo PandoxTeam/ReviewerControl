@@ -6,19 +6,13 @@ import { FormBuilder, FormGroup, Validators, RequiredValidator } from '@angular/
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   myForm: FormGroup;
 
-  // constructor() { }
-  constructor(private fb: FormBuilder) { }
-
-  ngOnInit(): void {
+  constructor(private fb: FormBuilder) {
     this.myForm = this.fb.group({
-      email: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]]
     });
-
-    // this.myForm.valueChanges.subscribe();
   }
-
 }
