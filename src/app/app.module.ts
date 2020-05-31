@@ -6,7 +6,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -31,6 +31,7 @@ import { MatChipsModule } from '@angular/material/chips';
     MatButtonModule,
     MatCheckboxModule,
     MatChipsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

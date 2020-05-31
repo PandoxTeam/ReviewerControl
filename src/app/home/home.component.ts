@@ -7,6 +7,8 @@ import { FormBuilder, FormGroup, Validators, RequiredValidator } from '@angular/
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+
   myForm: FormGroup;
 
   // constructor() { }
@@ -21,4 +23,7 @@ export class HomeComponent implements OnInit {
     // this.myForm.valueChanges.subscribe();
   }
 
+  log(x) {
+    console.log(x);
+  }
 }
